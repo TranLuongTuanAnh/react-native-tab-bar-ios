@@ -1,0 +1,6 @@
+rootProject.name = 'TabBarIOSExample'
+
+include ':react-native-TabBarIOS'
+project(':react-native-TabBarIOS').projectDir = new File(rootProject.projectDir, '../../android')
+
+include ':app'
