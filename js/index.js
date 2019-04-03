@@ -10,13 +10,16 @@
 
 'use strict';
 
-const React = require('react');
-const { StyleSheet } = require('react-native');
-const RCTTabBar = require('./RCTTabBarNativeComponent');
-const TabBarItemIOS = require('./TabBarItemIOS');
+const React = require('React');
+const StyleSheet = require('StyleSheet');
+const TabBarItemIOSNew = require('TabBarItemIOS');
 
-import type { ViewProps } from 'ViewPropTypes';
-import type { ColorValue } from 'StyleSheetTypes';
+const requireNativeComponent = require('requireNativeComponent');
+
+import type {ViewProps} from 'ViewPropTypes';
+import type {ColorValue} from 'StyleSheetTypes';
+
+const RCTTabBar = requireNativeComponent('RCTTabBar');
 
 type Props = $ReadOnly<{|
   ...ViewProps,
@@ -68,7 +71,7 @@ type Props = $ReadOnly<{|
 let showedDeprecationWarning = false;
 
 class TabBarIOS extends React.Component<Props> {
-  static Item = TabBarItemIOS;
+  static Item = TabBarItemIOSNew;
 
   componentDidMount() {
     if (!showedDeprecationWarning) {

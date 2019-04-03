@@ -10,10 +10,12 @@
 
 'use strict';
 
-const React = require('react');
-const StaticContainer = require('react-native/Libraries/Components/StaticContainer.react');
-const {StyleSheet, View} = require('react-native');
-const RCTTabBarItemNativeComponent = require('./RCTTabBarItemNativeComponent');
+const React = require('React');
+const StaticContainer = require('StaticContainer.react');
+const StyleSheet = require('StyleSheet');
+const View = require('View');
+
+const requireNativeComponent = require('requireNativeComponent');
 
 import type {ViewProps} from 'ViewPropTypes';
 import type {ColorValue} from 'StyleSheetTypes';
@@ -148,9 +150,9 @@ class TabBarItemIOS extends React.Component<Props, State> {
     }
 
     return (
-      <RCTTabBarItemNativeComponent {...props} style={[styles.tab, style]}>
+      <RCTTabBarItem {...props} style={[styles.tab, style]}>
         {tabContents}
-      </RCTTabBarItemNativeComponent>
+      </RCTTabBarItem>
     );
   }
 }
@@ -164,5 +166,7 @@ const styles = StyleSheet.create({
     left: 0,
   },
 });
+
+const RCTTabBarItem = requireNativeComponent('RCTTabBarItem');
 
 module.exports = TabBarItemIOS;
