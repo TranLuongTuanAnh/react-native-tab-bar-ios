@@ -13,13 +13,14 @@
 const React = require('React');
 const StyleSheet = require('StyleSheet');
 const TabBarItemIOS = require('./TabBarItemIOS');
+import { NativeModules } from "react-native";
 
 const requireNativeComponent = require('requireNativeComponent');
+const RNCTabBar = requireNativeComponent('RNCTabBar');
 
 import type {ViewProps} from 'ViewPropTypes';
 import type {ColorValue} from 'StyleSheetTypes';
 
-const RCTTabBar = requireNativeComponent('RCTTabBar');
 
 type Props = $ReadOnly<{|
   ...ViewProps,
@@ -86,7 +87,7 @@ class TabBarIOS extends React.Component<Props> {
 
   render() {
     return (
-      <RCTTabBar
+      <RNCTabBar
         style={[styles.tabGroup, this.props.style]}
         unselectedTintColor={this.props.unselectedTintColor}
         unselectedItemTintColor={this.props.unselectedItemTintColor}
@@ -96,7 +97,7 @@ class TabBarIOS extends React.Component<Props> {
         itemPositioning={this.props.itemPositioning}
         translucent={this.props.translucent !== false}>
         {this.props.children}
-      </RCTTabBar>
+      </RNCTabBar>
     );
   }
 }

@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTTabBarItem.h"
+#import "RNCTabBarItem.h"
 
 #import <React/RCTConvert.h>
 #import <React/RCTLog.h>
@@ -30,7 +30,7 @@ RCT_ENUM_CONVERTER(UITabBarSystemItem, (@{
 
 @end
 
-@implementation RCTTabBarItem{
+@implementation RNCTabBarItem{
   UITapGestureRecognizer *_selectRecognizer;
 }
 

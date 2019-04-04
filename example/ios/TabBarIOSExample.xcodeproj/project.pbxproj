@@ -37,7 +37,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* TabBarIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TabBarIOSExampleTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		AD2D578D2255E778001B2FD0 /* libRNCReactNativeTabBarIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2D578C2255E753001B2FD0 /* libRNCReactNativeTabBarIos.a */; };
+		AD2D579F2255EE6E001B2FD0 /* libRNCReactNativeTabBarIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD2D579E2255EE32001B2FD0 /* libRNCReactNativeTabBarIos.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -282,9 +282,9 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		AD2D578B2255E753001B2FD0 /* PBXContainerItemProxy */ = {
+		AD2D579D2255EE32001B2FD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AD2D57872255E753001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */;
+			containerPortal = AD2D57992255EE32001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNCReactNativeTabBarIos;
@@ -352,7 +352,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		AD2D57872255E753001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCReactNativeTabBarIos.xcodeproj; path = ../../ios/RNCReactNativeTabBarIos.xcodeproj; sourceTree = "<group>"; };
+		AD2D57992255EE32001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNCReactNativeTabBarIos.xcodeproj; path = ../../ios/RNCReactNativeTabBarIos.xcodeproj; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -371,7 +371,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2D578D2255E778001B2FD0 /* libRNCReactNativeTabBarIos.a in Frameworks */,
+				AD2D579F2255EE6E001B2FD0 /* libRNCReactNativeTabBarIos.a in Frameworks */,
 				ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
@@ -562,7 +562,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				AD2D57872255E753001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */,
+				AD2D57992255EE32001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -613,10 +613,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD2D57882255E753001B2FD0 /* Products */ = {
+		AD2D579A2255EE32001B2FD0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD2D578C2255E753001B2FD0 /* libRNCReactNativeTabBarIos.a */,
+				AD2D579E2255EE32001B2FD0 /* libRNCReactNativeTabBarIos.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,8 +790,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = AD2D57882255E753001B2FD0 /* Products */;
-					ProjectRef = AD2D57872255E753001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */;
+					ProductGroup = AD2D579A2255EE32001B2FD0 /* Products */;
+					ProjectRef = AD2D57992255EE32001B2FD0 /* RNCReactNativeTabBarIos.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1029,11 +1029,11 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		AD2D578C2255E753001B2FD0 /* libRNCReactNativeTabBarIos.a */ = {
+		AD2D579E2255EE32001B2FD0 /* libRNCReactNativeTabBarIos.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNCReactNativeTabBarIos.a;
-			remoteRef = AD2D578B2255E753001B2FD0 /* PBXContainerItemProxy */;
+			remoteRef = AD2D579D2255EE32001B2FD0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {

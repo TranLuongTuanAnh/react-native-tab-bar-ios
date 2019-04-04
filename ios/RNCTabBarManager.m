@@ -8,7 +8,7 @@
 #import "RCTTabBarManager.h"
 
 #import <React/RCTBridge.h>
-#import "RCTTabBar.h"
+#import "RNCTabBar.h"
 #import <React/RCTUIManager.h>
 #import <React/RCTUIManagerObserverCoordinator.h>
 
@@ -29,7 +29,7 @@ RCT_ENUM_CONVERTER(UITabBarItemPositioning, (@{
 @implementation RCTTabBarManager
 {
   // The main thread only.
-  NSHashTable<RCTTabBar *> *_viewRegistry;
+  NSHashTable<RNCTabBar *> *_viewRegistry;
 }
 
 - (void)setBridge:(RCTBridge *)bridge
@@ -52,7 +52,7 @@ RCT_EXPORT_MODULE()
     _viewRegistry = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
   }
 
-  RCTTabBar *view = [RCTTabBar new];
+  RNCTabBar *view = [RNCTabBar new];
   [_viewRegistry addObject:view];
   return view;
 }
@@ -72,7 +72,7 @@ RCT_EXPORT_VIEW_PROPERTY(unselectedItemTintColor, UIColor)
 - (void)uiManagerDidPerformMounting:(__unused RCTUIManager *)manager
 {
   RCTExecuteOnMainQueue(^{
-    for (RCTTabBar *view in self->_viewRegistry) {
+    for (RNCTabBar *view in self->_viewRegistry) {
       [view uiManagerDidPerformMounting];
     }
   });

@@ -150,9 +150,9 @@ class TabBarItemIOS extends React.Component<Props, State> {
     }
 
     return (
-      <RCTTabBarItem {...props} style={[styles.tab, style]}>
+      <RNCTabBarItem {...props} style={[styles.tab, style]}>
         {tabContents}
-      </RCTTabBarItem>
+      </RNCTabBarItem>
     );
   }
 }
@@ -167,6 +167,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const RCTTabBarItem = requireNativeComponent('RCTTabBarItem');
+const RNCTabBarItem = requireNativeComponent('RNCTabBarItem');
 
 module.exports = TabBarItemIOS;
