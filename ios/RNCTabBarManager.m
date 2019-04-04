@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTTabBarManager.h"
+#import "RNCTabBarManager.h"
 
 #import <React/RCTBridge.h>
 #import "RNCTabBar.h"
@@ -22,11 +22,11 @@ RCT_ENUM_CONVERTER(UITabBarItemPositioning, (@{
 
 @end
 
-@interface RCTTabBarManager () <RCTUIManagerObserver>
+@interface RNCTabBarManager () <RCTUIManagerObserver>
 
 @end
 
-@implementation RCTTabBarManager
+@implementation RNCTabBarManager
 {
   // The main thread only.
   NSHashTable<RNCTabBar *> *_viewRegistry;

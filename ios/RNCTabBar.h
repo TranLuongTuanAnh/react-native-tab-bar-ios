@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RCTTabBar : UIView
+@interface RNCTabBar : UIView
 
 @property (nonatomic, strong) UIColor *unselectedTintColor;
 @property (nonatomic, strong) UIColor *tintColor;

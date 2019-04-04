@@ -7,6 +7,6 @@
 
 #import <React/RCTViewManager.h>
 
-@interface RCTTabBarItemManager : RCTViewManager
+@interface RNCTabBarItemManager : RCTViewManager
 
 @end

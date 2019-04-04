@@ -5,21 +5,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTTabBar.h"
+#import "RNCTabBar.h"
 
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTLog.h>
-#import "RCTTabBarItem.h"
+#import "RNCTabBarItem.h"
 #import <React/RCTUtils.h>
 #import <React/RCTView.h>
 #import <React/RCTWrapperViewController.h>
 #import <React/UIView+React.h>
 
-@interface RCTTabBar() <UITabBarControllerDelegate>
+@interface RNCTabBar() <UITabBarControllerDelegate>
 
 @end
 
-@implementation RCTTabBar
+@implementation RNCTabBar
 {
   BOOL _tabsChanged;
   UITabBarController *_tabController;
@@ -48,9 +48,9 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
   [_tabController removeFromParentViewController];
 }
 
-- (void)insertReactSubview:(RCTTabBarItem *)subview atIndex:(NSInteger)atIndex
+- (void)insertReactSubview:(RNCTabBarItem *)subview atIndex:(NSInteger)atIndex
 {
-  if (![subview isKindOfClass:[RCTTabBarItem class]]) {
+  if (![subview isKindOfClass:[RNCTabBarItem class]]) {
     RCTLogError(@"subview should be of type RCTTabBarItem");
     return;
   }
@@ -58,7 +58,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
   _tabsChanged = YES;
 }
 
-- (void)removeReactSubview:(RCTTabBarItem *)subview
+- (void)removeReactSubview:(RNCTabBarItem *)subview
 {
   if (self.reactSubviews.count == 0) {
     RCTLogError(@"should have at least one view to remove a subview");
@@ -89,7 +89,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
   if (_tabsChanged) {
 
     NSMutableArray<UIViewController *> *viewControllers = [NSMutableArray array];
-    for (RCTTabBarItem *tab in [self reactSubviews]) {
+    for (RNCTabBarItem *tab in [self reactSubviews]) {
       UIViewController *controller = tab.reactViewController;
       if (!controller) {
         controller = [[RCTWrapperViewController alloc] initWithContentView:tab];
@@ -103,7 +103,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 
   [self.reactSubviews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger index, __unused BOOL *stop) {
 
-    RCTTabBarItem *tab = (RCTTabBarItem *)view;
+    RNCTabBarItem *tab = (RNCTabBarItem *)view;
     UIViewController *controller = self->_tabController.viewControllers[index];
     if (self->_unselectedTintColor) {
       [tab.barItem setTitleTextAttributes:@{NSForegroundColorAttributeName: self->_unselectedTintColor} forState:UIControlStateNormal];
@@ -209,7 +209,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)initWithCoder:(NSCoder *)aDecoder)
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
 {
   NSUInteger index = [tabBarController.viewControllers indexOfObject:viewController];
-  RCTTabBarItem *tab = (RCTTabBarItem *)self.reactSubviews[index];
+  RNCTabBarItem *tab = (RNCTabBarItem *)self.reactSubviews[index];
   if (tab.onPress) tab.onPress(nil);
   return NO;
 }

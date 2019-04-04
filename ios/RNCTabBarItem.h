@@ -16,7 +16,7 @@
 
 @end
 
-@interface RCTTabBarItem : UIView
+@interface RNCTabBarItem : UIView
 
 @property (nonatomic, copy) id /* NSString or NSNumber */ badge;
 @property (nonatomic, strong) UIImage *icon;

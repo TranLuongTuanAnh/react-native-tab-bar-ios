@@ -5,18 +5,18 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-#import "RCTTabBarItemManager.h"
+#import "RNCTabBarItemManager.h"
 
 #import <React/RCTConvert.h>
-#import "RCTTabBarItem.h"
+#import "RNCTabBarItem.h"
 
-@implementation RCTTabBarItemManager
+@implementation RNCTabBarItemManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  return [RCTTabBarItem new];
+  return [RNCTabBarItem new];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(badge, id /* NSString or NSNumber */)
@@ -29,7 +29,7 @@ RCT_EXPORT_VIEW_PROPERTY(onPress, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(badgeColor, UIColor)
 RCT_EXPORT_VIEW_PROPERTY(isTVSelectable, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(testID, NSString)
-RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RCTTabBarItem)
+RCT_CUSTOM_VIEW_PROPERTY(title, NSString, RNCTabBarItem)
 {
   view.barItem.title = json ? [RCTConvert NSString:json] : defaultView.barItem.title;
   view.barItem.imageInsets = view.barItem.title.length ? UIEdgeInsetsZero : (UIEdgeInsets){6, 0, -6, 0};
