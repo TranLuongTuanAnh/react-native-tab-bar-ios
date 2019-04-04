@@ -1,15 +1,13 @@
-#import <UIKit/UIKit.h>
+//
+//  RNCReactNativeTabBarIos.h
+//  RNCReactNativeTabBarIos
+//
+//  Created by anh tranluongtuan on 2019/04/04.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
 
-@interface RNCReactNativeTabBarIos : UIView
+#ifndef RNCReactNativeTabBarIos_h
+#define RNCReactNativeTabBarIos_h
 
-@property (nonatomic, strong) UIColor *unselectedTintColor;
-@property (nonatomic, strong) UIColor *tintColor;
-@property (nonatomic, strong) UIColor *barTintColor;
-@property (nonatomic, assign) BOOL translucent;
-#if !TARGET_OS_TV
-@property (nonatomic, assign) UIBarStyle barStyle;
-#endif
 
-- (void)uiManagerDidPerformMounting;
-
-@end
+#endif /* RNCReactNativeTabBarIos_h */

@@ -9,7 +9,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
-import {TabBarIOS} from 'react-native-TabBarIOS';
+import TabBarIOS from 'react-native-TabBarIOS';
 console.log("TabBarIOS", TabBarIOS);
 
 

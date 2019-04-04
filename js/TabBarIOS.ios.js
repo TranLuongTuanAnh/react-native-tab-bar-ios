@@ -12,7 +12,7 @@
 
 const React = require('React');
 const StyleSheet = require('StyleSheet');
-const TabBarItemIOSNew = require('TabBarItemIOS');
+const TabBarItemIOS = require('./TabBarItemIOS');
 
 const requireNativeComponent = require('requireNativeComponent');
 
@@ -71,7 +71,7 @@ type Props = $ReadOnly<{|
 let showedDeprecationWarning = false;
 
 class TabBarIOS extends React.Component<Props> {
-  static Item = TabBarItemIOSNew;
+  static Item = TabBarItemIOS;
 
   componentDidMount() {
     if (!showedDeprecationWarning) {

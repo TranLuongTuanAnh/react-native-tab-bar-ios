@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNCReactNativeTabBarIos.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNCReactNativeTabBarIos.m */; };
-		BD3076982254ABAD008E17E9 /* RCTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3076912254ABAC008E17E9 /* RCTTabBar.m */; };
+		AD2D57902255E822001B2FD0 /* RCTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2D578E2255E822001B2FD0 /* RCTTabBar.m */; };
 		BD3076992254ABAD008E17E9 /* RCTTabBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3076942254ABAC008E17E9 /* RCTTabBarManager.m */; };
 		BD30769A2254ABAD008E17E9 /* RCTTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3076962254ABAD008E17E9 /* RCTTabBarItem.m */; };
 		BD30769B2254ABAD008E17E9 /* RCTTabBarItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3076972254ABAD008E17E9 /* RCTTabBarItemManager.m */; };
@@ -28,10 +27,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNCReactNativeTabBarIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCReactNativeTabBarIos.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNCReactNativeTabBarIos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCReactNativeTabBarIos.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNCReactNativeTabBarIos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCReactNativeTabBarIos.m; sourceTree = "<group>"; };
-		BD3076902254AB9F008E17E9 /* RCTTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTTabBar.h; sourceTree = "<group>"; };
-		BD3076912254ABAC008E17E9 /* RCTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTabBar.m; sourceTree = "<group>"; };
+		AD2D578E2255E822001B2FD0 /* RCTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTabBar.m; sourceTree = "<group>"; };
+		AD2D578F2255E822001B2FD0 /* RCTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTabBar.h; sourceTree = "<group>"; };
 		BD3076922254ABAC008E17E9 /* RCTTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTabBarManager.h; sourceTree = "<group>"; };
 		BD3076932254ABAC008E17E9 /* RCTTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTTabBarItem.h; sourceTree = "<group>"; };
 		BD3076942254ABAC008E17E9 /* RCTTabBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarManager.m; sourceTree = "<group>"; };
@@ -62,10 +59,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNCReactNativeTabBarIos.h */,
-				B3E7B5891CC2AC0600A0062D /* RNCReactNativeTabBarIos.m */,
-				BD3076902254AB9F008E17E9 /* RCTTabBar.h */,
-				BD3076912254ABAC008E17E9 /* RCTTabBar.m */,
+				AD2D578F2255E822001B2FD0 /* RCTTabBar.h */,
+				AD2D578E2255E822001B2FD0 /* RCTTabBar.m */,
 				BD3076932254ABAC008E17E9 /* RCTTabBarItem.h */,
 				BD3076962254ABAD008E17E9 /* RCTTabBarItem.m */,
 				BD3076952254ABAC008E17E9 /* RCTTabBarItemManager.h */,
@@ -133,10 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3076992254ABAD008E17E9 /* RCTTabBarManager.m in Sources */,
-				B3E7B58A1CC2AC0600A0062D /* RNCReactNativeTabBarIos.m in Sources */,
 				BD30769A2254ABAD008E17E9 /* RCTTabBarItem.m in Sources */,
-				BD3076982254ABAD008E17E9 /* RCTTabBar.m in Sources */,
 				BD30769B2254ABAD008E17E9 /* RCTTabBarItemManager.m in Sources */,
+				AD2D57902255E822001B2FD0 /* RCTTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

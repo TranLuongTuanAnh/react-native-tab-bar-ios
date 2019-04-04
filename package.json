@@ -2,7 +2,7 @@
   "name": "react-native-react-native-tab-bar-ios",
   "version": "1.0.0",
   "description": "",
-  "main": "js/index.js",
+  "main": "js/TabBarIOS",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
