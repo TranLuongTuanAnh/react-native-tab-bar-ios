@@ -10,8 +10,6 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 
 import TabBarIOS from 'react-native-TabBarIOS';
-console.log("TabBarIOS", TabBarIOS);
-
 
 export default class StarterTabBarIOS extends React.Component {
 
