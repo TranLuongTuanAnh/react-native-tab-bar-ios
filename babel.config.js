@@ -5,7 +5,7 @@ module.exports = {
       "module-resolver",
       {
         alias: {
-            "react-native-TabBarIOS": "./js/TabBarIOS"
+            "react-native-tab-bar-ios": "./js/TabBarIOS"
         },
         cwd: "babelrc"
       }
