@@ -10,12 +10,9 @@
 
 'use strict';
 
-const React = require('React');
-const StaticContainer = require('StaticContainer.react');
-const StyleSheet = require('StyleSheet');
-const View = require('View');
-
-const requireNativeComponent = require('requireNativeComponent');
+import * as React from 'react';
+import { StyleSheet,View, requireNativeComponent } from 'react-native';
+const StaticContainer = require('react-native/Libraries/Components/StaticContainer.react');
 
 import type {ViewProps} from 'ViewPropTypes';
 import type {ColorValue} from 'StyleSheetTypes';

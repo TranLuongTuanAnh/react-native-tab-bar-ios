@@ -10,12 +10,10 @@
 
 'use strict';
 
-const React = require('React');
-const StyleSheet = require('StyleSheet');
-const TabBarItemIOS = require('./TabBarItemIOS');
-import { NativeModules } from "react-native";
+import * as React from 'react';
+import { StyleSheet, requireNativeComponent } from 'react-native';
+import TabBarItemIOS from './TabBarItemIOS';
 
-const requireNativeComponent = require('requireNativeComponent');
 const RNCTabBar = requireNativeComponent('RNCTabBar');
 
 import type {ViewProps} from 'ViewPropTypes';
