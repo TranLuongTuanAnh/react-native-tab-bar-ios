@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		134814201AA4EA6300B7C361 /* libRNCReactNativeTabBarIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCReactNativeTabBarIos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		134814201AA4EA6300B7C361 /* libRNCTabBarIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCTabBarIos.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD2D578E2255E822001B2FD0 /* RNCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCTabBar.m; sourceTree = "<group>"; };
 		AD2D578F2255E822001B2FD0 /* RNCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCTabBar.h; sourceTree = "<group>"; };
 		BD3076922254ABAC008E17E9 /* RNCTabBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCTabBarManager.h; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libRNCReactNativeTabBarIos.a */,
+				134814201AA4EA6300B7C361 /* libRNCTabBarIos.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,9 +74,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58B511DA1A9E6C8500147676 /* RNCReactNativeTabBarIos */ = {
+		58B511DA1A9E6C8500147676 /* RNCTabBarIos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNCReactNativeTabBarIos" */;
+			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNCTabBarIos" */;
 			buildPhases = (
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
@@ -86,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = RNCReactNativeTabBarIos;
+			name = RNCTabBarIos;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libRNCReactNativeTabBarIos.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libRNCTabBarIos.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNCReactNativeTabBarIos" */;
+			buildConfigurationList = 58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNCTabBarIos" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,7 +117,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58B511DA1A9E6C8500147676 /* RNCReactNativeTabBarIos */,
+				58B511DA1A9E6C8500147676 /* RNCTabBarIos */,
 			);
 		};
 /* End PBXProject section */
@@ -229,7 +229,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNCReactNativeTabBarIos;
+				PRODUCT_NAME = RNCTabBarIos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -245,7 +245,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNCReactNativeTabBarIos;
+				PRODUCT_NAME = RNCTabBarIos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -253,7 +253,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNCReactNativeTabBarIos" */ = {
+		58B511D61A9E6C8500147676 /* Build configuration list for PBXProject "RNCTabBarIos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511ED1A9E6C8500147676 /* Debug */,
@@ -262,7 +262,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNCReactNativeTabBarIos" */ = {
+		58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RNCTabBarIos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58B511F01A9E6C8500147676 /* Debug */,
